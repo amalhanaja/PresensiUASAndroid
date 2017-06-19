@@ -13,6 +13,8 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.orhanobut.logger.Logger;
@@ -26,7 +28,6 @@ import d4tekkom.presensiuas.PresensiApplication;
 import d4tekkom.presensiuas.R;
 import d4tekkom.presensiuas.data.model.Jadwal;
 import d4tekkom.presensiuas.service.BluetoothService;
-import d4tekkom.presensiuas.ui.bluetooth.BluetoothActivity;
 import d4tekkom.presensiuas.ui.device.DeviceListActivity;
 
 public class MainActivity extends AppCompatActivity implements MainContract.View {
@@ -36,6 +37,8 @@ public class MainActivity extends AppCompatActivity implements MainContract.View
 
     @BindView(R.id.recycler_view)
     RecyclerView recyclerView;
+    @BindView(R.id.progress_bar)
+    ProgressBar progressBar;
 
 
     private GridLayoutManager mLayoutManager;
@@ -142,7 +145,7 @@ public class MainActivity extends AppCompatActivity implements MainContract.View
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
         DaggerMainComponent.builder()
-                .applicationComponent((((PresensiApplication)getApplication()).getApplicationComponent()))
+                .applicationComponent((((PresensiApplication) getApplication()).getApplicationComponent()))
                 .mainModule(new MainModule(this))
                 .build()
                 .inject(this);
@@ -181,12 +184,13 @@ public class MainActivity extends AppCompatActivity implements MainContract.View
 
     @Override
     public void showLoading() {
-
+        progressBar.setIndeterminate(true);
+        progressBar.setVisibility(View.VISIBLE);
     }
 
     @Override
     public void hideLoading() {
-
+        progressBar.setVisibility(View.GONE);
     }
 
     @Override
@@ -215,7 +219,7 @@ public class MainActivity extends AppCompatActivity implements MainContract.View
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
             case R.id.action_bluetooth:
                 startActivityForResult(new Intent(this, DeviceListActivity.class), REQUEST_CONNECT_DEVICE);
                 break;

@@ -39,6 +39,7 @@ public class LoginPresenter implements LoginContract.Presenter {
         mView.setupView();
         if (mDataRepository.isPetugasLoggedIn()){
             // TODO: 19/06/17 OPEN MAINACTIVITY
+            mView.startMainActivity();
         }
     }
 

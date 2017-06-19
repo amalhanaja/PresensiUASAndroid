@@ -146,6 +146,7 @@ public class MainPresenter implements MainContract.Presenter {
     }
 
     private void FetchJadwalList(){
+        mView.showLoading();
         Logger.i("FETCHING");
         mCompositeDisposable.add(mRepository.getJadwalList()
                 .observeOn(mScheduler.ui())
@@ -154,6 +155,7 @@ public class MainPresenter implements MainContract.Presenter {
                     @Override
                     public void accept(@NonNull List<Jadwal> jadwals) throws Exception {
                         Logger.i("ACCEPT");
+                        mView.hideLoading();
                         if (!jadwalList.isEmpty()){
                             jadwalList.clear();
                         }
