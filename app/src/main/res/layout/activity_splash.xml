@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:screenOrientation="portrait"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<ListView android:id="@+id/in" -->
+        <!--android:layout_width="wrap_content" -->
+        <!--android:layout_height="wrap_content" -->
+        <!--android:stackFromBottom="true" -->
+        <!--android:transcriptMode="alwaysScroll" -->
+        <!--android:layout_weight="1.0"/>-->
+    <!--<LinearLayout -->
+        <!--android:orientation="vertical" -->
+        <!--android:layout_width="match_parent" -->
+        <!--android:layout_height="wrap_content">-->
+        <!--<TextView -->
+            <!--android:textColor="#ff00ff00" -->
+            <!--android:id="@+id/TextView02" -->
+            <!--android:layout_width="wrap_content" -->
+            <!--android:layout_height="wrap_content" -->
+            <!--android:text="@string/itemcounter"/>-->
+        <!--<TextView -->
+            <!--android:textColor="#ff00ff00" -->
+            <!--android:id="@+id/TextView01" -->
+            <!--android:layout_width="wrap_content" -->
+            <!--android:layout_height="wrap_content" -->
+            <!--android:text="@string/filesize_turnedoff"-->
+            <!--/>-->
+        <!--<EditText -->
+            <!--android:textColor="#ff888888" -->
+            <!--android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" -->
+            <!--android:id="@+id/edit_text_out" -->
+            <!--android:visibility="visible" -->
+            <!--android:layout_width="match_parent" -->
+            <!--android:layout_height="match_parent" -->
+            <!--android:text="@string/writemsghere" -->
+            <!--android:soundEffectsEnabled="false" -->
+            <!--android:inputType="text|textCapCharacters|textCapWords|textCapSentences|textAutoCorrect|textAutoComplete|textMultiLine|textImeMultiLine|textNoSuggestions|textUri|textEmailAddress|textEmailSubject|textShortMessage|textLongMessage|textPersonName|textPostalAddress|textPassword|textVisiblePassword|textWebEditText|textFilter|textPhonetic|textWebEmailAddress|textWebPassword|phone"/>-->
+        <!--<FrameLayout -->
+            <!--android:id="@+id/FrameLayout01" -->
+            <!--android:layout_width="match_parent" -->
+            <!--android:layout_height="wrap_content">-->
+            <!--<Button -->
+                <!--android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" -->
+                <!--android:id="@+id/button_send" -->
+                <!--android:layout_width="wrap_content" -->
+                <!--android:layout_height="wrap_content" -->
+                <!--android:text="@string/sendmsg" -->
+                <!--android:drawableRight="@drawable/stat_sys_upload_anim0"/>-->
+            <!--<ImageView -->
+                <!--android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" -->
+                <!--android:id="@+id/ImageView01" -->
+                <!--android:layout_width="wrap_content" -->
+                <!--android:layout_height="wrap_content" -->
+                <!--android:src="@drawable/stat_sys_data_bluetooth" -->
+                <!--android:adjustViewBounds="true" -->
+                <!--android:baselineAlignBottom="true" -->
+                <!--android:contentDescription="@string/desc1"/>-->
+            <!--<ImageView -->
+                <!--android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" -->
+                <!--android:id="@+id/ImageView02" -->
+                <!--android:layout_width="wrap_content" -->
+                <!--android:layout_height="wrap_content" -->
+                <!--android:layout_marginTop="10dp" -->
+                <!--android:src="@mipmap/ic_launcher" -->
+                <!--android:adjustViewBounds="true" -->
+                <!--android:baselineAlignBottom="true" -->
+                <!--android:contentDescription="@string/desc2"/>-->
+            <!--<Button-->
+                <!--android:id="@+id/button_pair"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"-->
+                <!--android:layout_marginRight="20dp"-->
+                <!--android:text="@string/connectdevice" />-->
+        <!--</FrameLayout>-->
+    <!--</LinearLayout>-->
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:id="@+id/LinearLayout01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"><Button android:id="@+id/Button01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Available Device"/>
+    <TextView android:textColor="#fff" android:id="@+id/title_paired_devices" android:background="#666" android:paddingLeft="5dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Paired Devices"/>
+    <ListView android:id="@+id/paired_devices" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:stackFromBottom="true" android:layout_weight="2.0"/>
+    <TextView android:textColor="#fff" android:id="@+id/title_new_devices" android:background="#666" android:paddingLeft="5dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Other Devices"/>
+    <ListView android:id="@+id/new_devices" android:layout_width="wrap_content" android:layout_height="wrap_content" android:stackFromBottom="true" android:layout_weight="1.0"/>
+</LinearLayout>
